@@ -1,0 +1,9 @@
+{% block multifile_widget %}
+	<div data-controller="multifile">
+		<div data-multifile-target="summary"></div>
+
+		<input type="file" {{ block('widget_attributes') }} autocomplete="off" style="display: none;" data-multifile-target="realInput" />
+
+		<input type="file" autocomplete="off" data-action="multifile#add" />
+	</div>
+{% endblock %}
